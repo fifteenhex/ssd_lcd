@@ -1,0 +1,8 @@
+menu "Verify Compile Config"
+source configs/Kconfigs/sdk/verify/feature/Kconfig
+source configs/Kconfigs/sdk/verify/mi_demo/Kconfig
+source configs/Kconfigs/sdk/verify/mixer/Kconfig
+source configs/Kconfigs/sdk/verify/py_ipu/Kconfig
+source configs/Kconfigs/sdk/verify/application/Kconfig
+
+endmenu

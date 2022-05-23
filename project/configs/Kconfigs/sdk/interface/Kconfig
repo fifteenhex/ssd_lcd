@@ -1,0 +1,432 @@
+menu "Interface Compile Config"
+comment "Interface Compile Config"
+
+config INTERFACE_AI
+    bool "ai"
+    default y
+    help
+        whether to compile or not
+
+config interface_ai
+    string
+    default enable if INTERFACE_AI
+    default disable if !INTERFACE_AI
+
+
+config INTERFACE_ALSA
+    bool "alsa"
+    default y
+    help
+        whether to compile or not
+
+config interface_alsa
+    string
+    default enable if INTERFACE_ALSA
+    default disable if !INTERFACE_ALSA
+
+
+config INTERFACE_AO
+    bool "ao"
+    default y
+    help
+        whether to compile or not
+
+config interface_ao
+    string
+    default enable if INTERFACE_AO
+    default disable if !INTERFACE_AO
+
+
+config INTERFACE_BAR
+    bool "bar"
+    default y
+    help
+        whether to compile or not
+
+config interface_bar
+    string
+    default enable if INTERFACE_BAR
+    default disable if !INTERFACE_BAR
+
+
+config INTERFACE_CIPHER
+    bool "cipher"
+    default y
+    help
+        whether to compile or not
+
+config interface_cipher
+    string
+    default enable if INTERFACE_CIPHER
+    default disable if !INTERFACE_CIPHER
+
+
+config INTERFACE_COMMON
+    bool "common"
+    default y
+    help
+        whether to compile or not
+
+config interface_common
+    string
+    default enable if INTERFACE_COMMON
+    default disable if !INTERFACE_COMMON
+
+
+config INTERFACE_CUS3A
+    bool "cus3a"
+    default y
+    help
+        whether to compile or not
+
+config interface_cus3a
+    string
+    default enable if INTERFACE_CUS3A
+    default disable if !INTERFACE_CUS3A
+
+
+config INTERFACE_DISP
+    bool "disp"
+    default y
+    help
+        whether to compile or not
+
+config interface_disp
+    string
+    default enable if INTERFACE_DISP
+    default disable if !INTERFACE_DISP
+
+
+config INTERFACE_DIVP
+    bool "divp"
+    default y
+    help
+        whether to compile or not
+
+config interface_divp
+    string
+    default enable if INTERFACE_DIVP
+    default disable if !INTERFACE_DIVP
+
+config INTERFACE_PSPI
+    bool "pspi"
+    default y
+    help
+        whether to compile or not
+
+config interface_pspi
+    string
+    default enable if INTERFACE_PSPI
+    default disable if !INTERFACE_PSPI
+
+config INTERFACE_FOO
+    bool "foo"
+    default y
+    help
+        whether to compile or not
+
+config interface_foo
+    string
+    default enable if INTERFACE_FOO
+    default disable if !INTERFACE_FOO
+
+
+config INTERFACE_GFX
+    bool "gfx"
+    default y
+    help
+        whether to compile or not
+
+config interface_gfx
+    string
+    default enable if INTERFACE_GFX
+    default disable if !INTERFACE_GFX
+
+
+config INTERFACE_GYRO
+    bool "gyro"
+    default y
+    help
+        whether to compile or not
+
+config interface_gyro
+    string
+    default enable if INTERFACE_GYRO
+    default disable if !INTERFACE_GYRO
+
+
+config INTERFACE_HDMI
+    bool "hdmi"
+    default y
+    help
+        whether to compile or not
+
+config interface_hdmi
+    string
+    default enable if INTERFACE_HDMI
+    default disable if !INTERFACE_HDMI
+
+
+config INTERFACE_IPU
+    bool "ipu"
+    default y
+    help
+        whether to compile or not
+
+config interface_ipu
+    string
+    default enable if INTERFACE_IPU
+    default disable if !INTERFACE_IPU
+
+
+config INTERFACE_IQSERVER
+    bool "iqserver"
+    default y
+    help
+        whether to compile or not
+
+config interface_iqserver
+    string
+    default enable if INTERFACE_IQSERVER
+    default disable if !INTERFACE_IQSERVER
+
+
+config INTERFACE_ISP
+    bool "isp"
+    default y
+    help
+        whether to compile or not
+
+config interface_isp
+    string
+    default enable if INTERFACE_ISP
+    default disable if !INTERFACE_ISP
+
+
+config INTERFACE_ISPALGO
+    bool "ispalgo"
+    default y
+    help
+        whether to compile or not
+
+config interface_ispalgo
+    string
+    default enable if INTERFACE_ISPALGO
+    default disable if !INTERFACE_ISPALGO
+
+
+config INTERFACE_JPD
+    bool "jpd"
+    default y
+    help
+        whether to compile or not
+
+config interface_jpd
+    string
+    default enable if INTERFACE_JPD
+    default disable if !INTERFACE_JPD
+
+
+config INTERFACE_LDC
+    bool "ldc"
+    default y
+    help
+        whether to compile or not
+
+config interface_ldc
+    string
+    default enable if INTERFACE_LDC
+    default disable if !INTERFACE_LDC
+
+
+config INTERFACE_MIPITX
+    bool "mipitx"
+    default y
+    help
+        whether to compile or not
+
+config interface_mipitx
+    string
+    default enable if INTERFACE_MIPITX
+    default disable if !INTERFACE_MIPITX
+
+
+config INTERFACE_PANEL
+    bool "panel"
+    default y
+    help
+        whether to compile or not
+
+config interface_panel
+    string
+    default enable if INTERFACE_PANEL
+    default disable if !INTERFACE_PANEL
+
+
+config INTERFACE_RGN
+    bool "rgn"
+    default y
+    help
+        whether to compile or not
+
+config interface_rgn
+    string
+    default enable if INTERFACE_RGN
+    default disable if !INTERFACE_RGN
+
+
+config INTERFACE_SED
+    bool "sed"
+    default y
+    help
+        whether to compile or not
+
+config interface_sed
+    string
+    default enable if INTERFACE_SED
+    default disable if !INTERFACE_SED
+
+
+config INTERFACE_SENSOR
+    bool "sensor"
+    default y
+    help
+        whether to compile or not
+
+config interface_sensor
+    string
+    default enable if INTERFACE_SENSOR
+    default disable if !INTERFACE_SENSOR
+
+
+config INTERFACE_SHADOW
+    bool "shadow"
+    default y
+    help
+        whether to compile or not
+
+config interface_shadow
+    string
+    default enable if INTERFACE_SHADOW
+    default disable if !INTERFACE_SHADOW
+
+
+config INTERFACE_SYS
+    bool "sys"
+    default y
+    help
+        whether to compile or not
+
+config interface_sys
+    string
+    default enable if INTERFACE_SYS
+    default disable if !INTERFACE_SYS
+
+
+config INTERFACE_VDEC
+    bool "vdec"
+    default y
+    help
+        whether to compile or not
+
+config interface_vdec
+    string
+    default enable if INTERFACE_VDEC
+    default disable if !INTERFACE_VDEC
+
+
+config INTERFACE_VDF
+    bool "vdf"
+    default y
+    help
+        whether to compile or not
+
+config interface_vdf
+    string
+    default enable if INTERFACE_VDF
+    default disable if !INTERFACE_VDF
+
+
+config INTERFACE_VDISP
+    bool "vdisp"
+    default y
+    help
+        whether to compile or not
+
+config interface_vdisp
+    string
+    default enable if INTERFACE_VDISP
+    default disable if !INTERFACE_VDISP
+
+
+config INTERFACE_VENC
+    bool "venc"
+    default y
+    help
+        whether to compile or not
+
+config interface_venc
+    string
+    default enable if INTERFACE_VENC
+    default disable if !INTERFACE_VENC
+
+
+config INTERFACE_VIF
+    bool "vif"
+    default y
+    help
+        whether to compile or not
+
+config interface_vif
+    string
+    default enable if INTERFACE_VIF
+    default disable if !INTERFACE_VIF
+
+
+config INTERFACE_VPE
+    bool "vpe"
+    default y
+    help
+        whether to compile or not
+
+config interface_vpe
+    string
+    default enable if INTERFACE_VPE
+    default disable if !INTERFACE_VPE
+
+
+config INTERFACE_WARP
+    bool "warp"
+    default y
+    help
+        whether to compile or not
+
+config interface_warp
+    string
+    default enable if INTERFACE_WARP
+    default disable if !INTERFACE_WARP
+
+
+config INTERFACE_WLAN
+    bool "wlan"
+    default y
+    help
+        whether to compile or not
+
+config interface_wlan
+    string
+    default enable if INTERFACE_WLAN
+    default disable if !INTERFACE_WLAN
+
+config INTERFACE_FB
+    bool "fb"
+    default y
+    help
+        whether to compile or not
+
+config interface_fb
+    string
+    default enable if INTERFACE_FB
+    default disable if !INTERFACE_FB
+
+endmenu

@@ -1,0 +1,11 @@
+config MS_SENSORDRIVER
+    bool "Sensor driver"
+    help
+        To enable sensor interface driver.
+
+config MS_SENSORDRIVER_INFINITY
+    tristate "Sensor driver"
+    depends on MS_SENSORDRIVER
+    default y
+    help
+        Enable support for image sensor

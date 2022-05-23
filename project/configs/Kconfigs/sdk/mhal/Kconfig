@@ -1,0 +1,315 @@
+menu "Mhal Compile Config"
+comment "Mhal Compile Config"
+
+config MHAL_AIO
+    bool "aio"
+    default y
+    help
+        whether to compile or not
+
+config mhal_aio
+    string
+    default enable if MHAL_AIO
+    default disable if !MHAL_AIO
+
+
+config MHAL_CMDQ_SERVICE
+    bool "cmdq_service"
+    default y
+    help
+        whether to compile or not
+
+config mhal_cmdq_service
+    string
+    default enable if MHAL_CMDQ_SERVICE
+    default disable if !MHAL_CMDQ_SERVICE
+
+
+config MHAL_CSI
+    bool "csi"
+    default y
+    help
+        whether to compile or not
+
+config mhal_csi
+    string
+    default enable if MHAL_CSI
+    default disable if !MHAL_CSI
+
+
+config MHAL_DISP
+    bool "disp"
+    default y
+    help
+        whether to compile or not
+
+config mhal_disp
+    string
+    default enable if MHAL_DISP
+    default disable if !MHAL_DISP
+
+
+config MHAL_DIVP
+    bool "divp"
+    default y
+    help
+        whether to compile or not
+
+config mhal_divp
+    string
+    default enable if MHAL_DIVP
+    default disable if !MHAL_DIVP
+
+
+config MHAL_EARLYINIT
+    bool "earlyinit"
+    default y
+    help
+        whether to compile or not
+
+config mhal_earlyinit
+    string
+    default enable if MHAL_EARLYINIT
+    default disable if !MHAL_EARLYINIT
+
+
+config MHAL_GE
+    bool "ge"
+    default y
+    help
+        whether to compile or not
+
+config mhal_ge
+    string
+    default enable if MHAL_GE
+    default disable if !MHAL_GE
+
+
+config MHAL_HDMITX
+    bool "hdmitx"
+    default y
+    help
+        whether to compile or not
+
+config mhal_hdmitx
+    string
+    default enable if MHAL_HDMITX
+    default disable if !MHAL_HDMITX
+
+
+config MHAL_IMI_HEAP
+    bool "imi_heap"
+    default y
+    help
+        whether to compile or not
+
+config mhal_imi_heap
+    string
+    default enable if MHAL_IMI_HEAP
+    default disable if !MHAL_IMI_HEAP
+
+
+config MHAL_INIT
+    bool "init"
+    default y
+    help
+        whether to compile or not
+
+config mhal_init
+    string
+    default enable if MHAL_INIT
+    default disable if !MHAL_INIT
+
+
+config MHAL_IPU
+    bool "ipu"
+    default y
+    help
+        whether to compile or not
+
+config mhal_ipu
+    string
+    default enable if MHAL_IPU
+    default disable if !MHAL_IPU
+
+
+config MHAL_ISP
+    bool "isp"
+    default y
+    help
+        whether to compile or not
+
+config mhal_isp
+    string
+    default enable if MHAL_ISP
+    default disable if !MHAL_ISP
+
+
+config MHAL_ISPALGO
+    bool "ispalgo"
+    default y
+    help
+        whether to compile or not
+
+config mhal_ispalgo
+    string
+    default enable if MHAL_ISPALGO
+    default disable if !MHAL_ISPALGO
+
+
+config MHAL_ISPMID
+    bool "ispmid"
+    default y
+    help
+        whether to compile or not
+
+config mhal_ispmid
+    string
+    default enable if MHAL_ISPMID
+    default disable if !MHAL_ISPMID
+
+
+config MHAL_ISPSCL
+    bool "ispscl"
+    default y
+    help
+        whether to compile or not
+
+config mhal_ispscl
+    string
+    default enable if MHAL_ISPSCL
+    default disable if !MHAL_ISPSCL
+
+
+config MHAL_JPD
+    bool "jpd"
+    default y
+    help
+        whether to compile or not
+
+config mhal_jpd
+    string
+    default enable if MHAL_JPD
+    default disable if !MHAL_JPD
+
+
+config MHAL_LDC
+    bool "ldc"
+    default y
+    help
+        whether to compile or not
+
+config mhal_ldc
+    string
+    default enable if MHAL_LDC
+    default disable if !MHAL_LDC
+
+
+config MHAL_MIPITX
+    bool "mipitx"
+    default y
+    help
+        whether to compile or not
+
+config mhal_mipitx
+    string
+    default enable if MHAL_MIPITX
+    default disable if !MHAL_MIPITX
+
+
+config MHAL_MLOAD
+    bool "mload"
+    default y
+    help
+        whether to compile or not
+
+config mhal_mload
+    string
+    default enable if MHAL_MLOAD
+    default disable if !MHAL_MLOAD
+
+
+config MHAL_NEON
+    bool "neon"
+    default y
+    help
+        whether to compile or not
+
+config mhal_neon
+    string
+    default enable if MHAL_NEON
+    default disable if !MHAL_NEON
+
+
+config MHAL_PANEL
+    bool "panel"
+    default y
+    help
+        whether to compile or not
+
+config mhal_panel
+    string
+    default enable if MHAL_PANEL
+    default disable if !MHAL_PANEL
+
+
+config MHAL_RGN
+    bool "rgn"
+    default y
+    help
+        whether to compile or not
+
+config mhal_rgn
+    string
+    default enable if MHAL_RGN
+    default disable if !MHAL_RGN
+
+
+config MHAL_SENSORIF
+    bool "sensorif"
+    default y
+    help
+        whether to compile or not
+
+config mhal_sensorif
+    string
+    default enable if MHAL_SENSORIF
+    default disable if !MHAL_SENSORIF
+
+
+config MHAL_VCODEC
+    bool "vcodec"
+    default y
+    help
+        whether to compile or not
+
+config mhal_vcodec
+    string
+    default enable if MHAL_VCODEC
+    default disable if !MHAL_VCODEC
+
+
+config MHAL_VIF
+    bool "vif"
+    default y
+    help
+        whether to compile or not
+
+config mhal_vif
+    string
+    default enable if MHAL_VIF
+    default disable if !MHAL_VIF
+
+
+config MHAL_VPE
+    bool "vpe"
+    default y
+    help
+        whether to compile or not
+
+config mhal_vpe
+    string
+    default enable if MHAL_VPE
+    default disable if !MHAL_VPE
+
+endmenu

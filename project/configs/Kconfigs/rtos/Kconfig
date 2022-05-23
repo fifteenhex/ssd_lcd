@@ -1,0 +1,51 @@
+menu "Rtos"
+
+config BOOL_DUAL_OS
+    bool "Dual Os"
+    default n
+
+config DUAL_OS
+    string
+    default "on" if BOOL_DUAL_OS
+    default "off"
+
+config BOOL_FAST_DEMO
+    bool "Fast Demo"
+    default n
+
+config FAST_DEMO
+    string
+    default "on" if BOOL_FAST_DEMO
+    default "off"
+
+config SENSOR_TYPE0
+    string "Sensor Type 0"
+    default ""
+
+config SENSOR_TYPE1
+    string "Sensor Type 1"
+    default ""
+
+config LINUX_MEM_SIZE
+    string "Linux Mem Size"
+    default ""
+
+
+config RTOS_BIN
+    string "Rtos Bin"
+    default ""
+
+config RTOS_LOAD_ADDR
+    string "Rtos Load Addr"
+    default ""
+
+
+config MMA_BASE
+    string "Mma Base"
+    default ""
+
+config MMA_SIZE
+    string "Mma Size"
+    default ""
+
+endmenu

@@ -1,0 +1,9 @@
+media.ko
+usb-common.ko
+usbcore.ko
+scsi_mod.ko
+udc-core.ko
+libcomposite.ko
+udc-msb250x.ko
+usb_f_hid.ko
+g_hid.ko

@@ -1,0 +1,6 @@
+menu "Mmap"
+config MMAP
+    string "Mmap"
+    default ""
+
+endmenu

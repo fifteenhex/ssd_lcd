@@ -1,0 +1,52 @@
+menu "Image"
+
+config IMAGE_CONFIG
+    string "Image Partition Config"
+    default "spinand.squashfs.partition.config"
+
+choice
+    prompt "Flash Size"
+    default FLASE_SIZE_NONE
+
+    config FLASH_SIZE_NONE
+        bool "None"
+
+    config FLASH_SIZE_8M
+        bool "8M"
+
+    config FLASH_SIZE_16M
+        bool "16M"
+
+    config FLASH_SIZE_32M
+        bool "32M"
+endchoice
+
+config FLASH_SIZE
+    string
+    default "" if FLASH_SIZE_NONE
+    default 8M if FLASH_SIZE_8M
+    default 16M if FLASH_SIZE_16M
+    default 32M if FLASH_SIZE_32M
+
+config EMMC_BOOT_LINUX
+    bool "eMMC boot linux"
+    default "false"
+    ---help---
+        eMMC boot linux and nor/spinand boot onebin
+
+config ONEBIN_BOOT_FLASH_TYPE
+    string "boot.bin burn in which flash(nor/spinand) when emmc boot"
+    depends on EMMC_BOOT_LINUX
+    default ""
+    ---help---
+	if the flag is not "nor", it's "nand"
+
+config EMMC_UPGRADE_PARTITION_SIZE
+    hex "eMMC upgrade partition size(byte) when linux boot from eMMC"
+    depends on EMMC_BOOT_LINUX
+    default "0x00000"
+    ---help---
+	set eMMC upgrade partition size(byte), default is 0, means don't enable this function
+	note: need to larger than the images_package's size
+
+endmenu

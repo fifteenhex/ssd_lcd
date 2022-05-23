@@ -1,0 +1,32 @@
+choice
+    prompt "Chip"
+    default I6E
+
+    config I2M
+        bool "i2m"
+
+    config I6
+        bool "i6"
+
+    config I6E
+        bool "i6e"
+
+    config I6B0
+        bool "i6b0"
+
+    config M6
+        bool "m6"
+
+    config P3
+        bool "p3"
+endchoice
+
+config CHIP
+    string
+    default i2m if I2M
+    default i6 if I6
+    default i6e if I6E
+    default i6b0 if I6B0
+    default m6 if M6
+    default p3 if P3
+    default i6e

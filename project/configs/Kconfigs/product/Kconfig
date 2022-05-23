@@ -1,0 +1,68 @@
+choice
+    prompt "Product"
+    default IPC
+
+    config IPC
+        bool "ipc"
+
+    config NVR
+        bool "nvr"
+
+    config XVR
+        bool "xvr"
+
+    config CARDV
+        bool "cardv"
+
+    config USBCAM
+        bool "usbcam"
+
+    config DISPCAM
+        bool "dispcam"
+
+    config DISPCAM-FASTBOOT
+        bool "dispcam-fastboot"
+    config DISP
+        bool "disp"
+
+    config DISP-FASTBOOT
+        bool "disp-fastboot"
+
+    config IPC-RTOS
+        bool "ipc-rtos"
+
+    config IPC-RTOS-SMPLH
+        bool "ipc-rtos-smplh"
+
+    config USBCAM-RTOS
+        bool "usbcam-rtos"
+
+    config IPC-FASTBOOT
+        bool "ipc-fastboot"
+
+    config NVR-FASTBOOT
+        bool "nvr-fastboot"
+
+    config USBCAM-FASTBOOT
+        bool "usbcam-fastboot"
+
+endchoice
+
+config PRODUCT
+    string
+    default ipc if IPC
+    default nvr if NVR
+    default xvr if XVR
+    default cardv if CARDV
+    default usbcam if USBCAM
+    default dispcam if DISPCAM
+    default dispcam-fastboot if DISPCAM-FASTBOOT
+    default disp if DISP
+    default disp-fastboot if DISP-FASTBOOT
+    default ipc-rtos if IPC-RTOS
+    default ipc-rtos-smplh if IPC-RTOS-SMPLH
+    default usbcam-rtos if USBCAM-RTOS
+    default ipc-fastboot if IPC-FASTBOOT
+    default nvr-fastboot if NVR-FASTBOOT
+    default usbcam-fastboot if USBCAM-FASTBOOT
+    default ipc

@@ -1,0 +1,54 @@
+menu "Sensor"
+config IQ0
+    string "IQ0"
+    default ""
+
+config IQ1
+    string "IQ1"
+    default ""
+
+config IQ2
+    string "IQ2"
+    default ""
+
+config IQ3
+    string "IQ3"
+    default ""
+
+config IQ_API0
+    string "IQ_API0"
+    default ""
+
+config IQ_API1
+    string "IQ_API1"
+    default ""
+
+config SENSOR_LIST
+    string "Sensor List"
+    default ""
+
+config SENSOR0
+    string "Sensor0"
+    default ""
+
+config SENSOR0_OPT
+    string "Sensor0 Opt"
+    default ""
+
+config SENSOR1
+    string "Sensor1"
+    default ""
+
+config SENSOR1_OPT
+    string "Sensor1 Opt"
+    default ""
+
+config SENSOR2
+    string "Sensor2"
+    default ""
+
+config SENSOR2_OPT
+    string "Sensor2 Opt"
+    default ""
+
+endmenu

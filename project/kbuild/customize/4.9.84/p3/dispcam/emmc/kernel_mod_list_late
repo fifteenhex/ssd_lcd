@@ -1,0 +1,13 @@
+media.ko
+videodev.ko
+v4l2-common.ko
+usb-common.ko
+usbcore.ko
+ehci-hcd.ko
+scsi_mod.ko
+usb-storage.ko
+videobuf2-core.ko
+videobuf2-v4l2.ko
+videobuf2-memops.ko
+videobuf2-vmalloc.ko
+uvcvideo.ko

@@ -1,0 +1,1 @@
+setenv ipl_version "FLASH_MATCH=1 CFG_SDMMC_DISABLE=n BOOT=1 SPINOR=1 CHIP=pioneer3"

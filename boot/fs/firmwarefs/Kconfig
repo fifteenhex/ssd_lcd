@@ -1,0 +1,7 @@
+
+config FS_FIRMWAREFS
+	bool "Support Firmware FileSystem"
+
+config FIRMWAREFS_ON_MMC
+	bool "Use firmwarefs on emmc/sdcard device"
+	depends on FS_FIRMWAREFS

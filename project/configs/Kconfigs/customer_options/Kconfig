@@ -1,0 +1,210 @@
+menu "Customer Options"
+config mi_dbg
+    bool "Mi Dbg"
+    default y
+
+config MI_DBG
+    int
+    range 0 1
+    default 0 if !mi_dbg
+    default 1
+
+
+config support_smart_display_vdec
+    bool "Smart Display Vdec"
+    default n
+
+config SUPPORT_SMART_DISPLAY_VDEC
+    int
+    range 0 1
+    default 0 if !support_smart_display_vdec
+    default 1
+
+
+config support_msos_mpool_add_pa2varange
+    bool "MsOS MPool Add PA2VARange"
+    default y
+
+config SUPPORT_MsOS_MPool_Add_PA2VARange
+    int
+    range 0 1
+    default 0 if !support_msos_mpool_add_pa2varange
+    default 1
+
+
+config support_disp_align_up_offset32
+    bool "Disp Align Up Offset32"
+    default y
+
+config SUPPORT_DISP_ALIGN_UP_OFFSET32
+    int
+    range 0 1
+    default 0 if !support_disp_align_up_offset32
+    default 1
+
+
+config support_hdmi_vga_direct_mode
+    bool "HDMI VGA Direct Mode"
+    default n
+
+config SUPPORT_HDMI_VGA_DIRECT_MODE
+    int
+    range 0 1
+    default 0 if !support_hdmi_vga_direct_mode
+    default 1
+
+
+config support_divp_use_ge_scaling_up
+    bool "Divp Use GE Scaling Up"
+    default n
+
+config SUPPORT_DIVP_USE_GE_SCALING_UP
+    int
+    range 0 1
+    default 0 if !support_divp_use_ge_scaling_up
+    default 1
+
+
+config support_vif_use_ge_fill_buf
+    bool "Vif Use GE Fill Buf"
+    default n
+
+config SUPPORT_VIF_USE_GE_FILL_BUF
+    int
+    range 0 1
+    default 0 if !support_vif_use_ge_fill_buf
+    default 1
+
+
+config support_stub_device_for_test_sys
+    bool "Stub Device For Test Sys"
+    default y
+
+config SUPPORT_STUB_DEVICE_FOR_TEST_SYS
+    int
+    range 0 1
+    default 0 if !support_stub_device_for_test_sys
+    default 1
+
+
+config support_vdec_multi_res
+    bool "Vdec Multi Res"
+    default n
+
+config SUPPORT_VDEC_MULTI_RES
+    int
+    range 0 1
+    default 0 if !support_vdec_multi_res
+    default 1
+
+
+config support_divp_p2_mode
+    bool "Divp P2 Mode"
+    default n
+
+config SUPPORT_DIVP_P2_MODE
+    int
+    range 0 1
+    default 0 if !support_divp_p2_mode
+    default 1
+
+config fb_video
+    bool "Fb Video"
+    default n
+
+config FB_VIDEO
+    int
+    range 0 1
+    default 0 if !fb_video
+    default 1
+
+
+menu "Mi Sys Pool Config"
+config config_mi_enable_vb_pool
+    bool "Mi Enable Vb Pool"
+    default n
+
+config CONFIG_MI_ENABLE_VB_POOL
+    int
+    range 0 1
+    default 0 if !config_mi_enable_vp_pool
+    default 1
+
+
+config config_mi_enable_meta_pool
+    bool "Mi Enable Meta Pool"
+    default y
+
+config CONFIG_MI_ENABLE_META_POOL
+    int
+    range 0 1
+    default 0 if !config_mi_enable_meta_pool
+    default 1
+
+
+config config_mi_enable_sys_cfg
+    bool "Mi Enable Sys Cfg"
+    default y
+
+config CONFIG_MI_ENABLE_SYS_CFG
+    int
+    range 0 1
+    default 0 if !config_mi_enable_sys_cfg
+    default 1
+
+
+config config_mi_enable_shrinkable_pool
+    bool "Mi Enable Shrinkable Pool"
+    default n
+
+config CONFIG_MI_ENABLE_SHRINKABLE_POOL
+    int
+    range 0 1
+    default 0 if !config_mi_enable_shrinkable_pool
+    default 1
+
+
+config config_mi_enable_ringheap_pool
+    bool "Mi Enable Ringheap Pool"
+    default n
+
+config CONFIG_MI_ENABLE_RINGHEAP_POOL
+    int
+    range 0 1
+    default 0 if !config_mi_enable_ringheap_pool
+    default 1
+endmenu
+config is_demo_board
+    bool "is demo board"
+    default n
+
+config IS_DEMO_BOARD
+    int "IS_DEMO_BOARD"
+    range 0 3
+    default 0 if !is_demo_board
+    default 1
+menu "Mi Venc Support"
+config config_mi_venc_enable_jpeg
+    bool "Mi Venc Enable Jpeg"
+    default y
+
+config CONFIG_MI_VENC_ENABLE_JPEG
+    int
+    range 0 1
+    default 0 if !config_mi_venc_enable_jpeg
+    default 1
+
+
+config config_mi_venc_enable_h26x
+    bool "Mi Venc Enable H26x"
+    default y
+
+config CONFIG_MI_VENC_ENABLE_H26X
+    int
+    range 0 1
+    default 0 if !config_mi_venc_enable_h26x
+    default 1
+
+endmenu
+
+endmenu

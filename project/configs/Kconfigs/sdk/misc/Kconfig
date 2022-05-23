@@ -1,0 +1,27 @@
+menu "Misc Compile Config"
+comment "Misc Compile Config"
+
+config MISC_FBDEV
+    bool "fbdev"
+    default y
+    help
+        whether to compile or not
+
+config misc_fbdev
+    string
+    default enable if MISC_FBDEV
+    default disable if !MISC_FBDEV
+
+
+config MISC_CONFIG_TOOL
+    bool "config_tool"
+    default y
+    help
+        whether to compile or not
+
+config misc_config_tool
+    string
+    default enable if MISC_CONFIG_TOOL
+    default disable if !MISC_CONFIG_TOOL
+
+endmenu

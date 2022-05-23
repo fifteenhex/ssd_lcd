@@ -1,0 +1,10 @@
+config VERIFY_PY_IPU
+    bool "py_ipu"
+    default n
+    help
+        whether to compile or not
+
+config verify_py_ipu
+    string
+    default enable if VERIFY_PY_IPU
+    default disable if !VERIFY_PY_IPU

@@ -1,0 +1,9 @@
+target remote gdbserver:2331
+file ./vmlinux
+set print pretty
+set height 0
+hb __switch_to 
+command
+printf "[Context Switch] [%d] %s -> [%d] %s",((struct thread_info *)$r1)->task->pid,((struct thread_info *)$r1)->task->comm,((struct thread_info *)$r2)->task->pid,((struct thread_info *)$r2)->task->comm
+c
+end

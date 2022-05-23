@@ -1,0 +1,32 @@
+menu "Kernel"
+
+choice
+    prompt "Kernel Version"
+    default KERNEL_VERSION_4.9.84
+
+    config KERNEL_VERSION_4.9.84
+        bool "4.9.84"
+
+    config KERNEL_VERSION_4.9.227
+        bool "4.9.227"
+endchoice
+
+config KERNEL_VERSION
+    string
+    default 4.9.84 if KERNEL_VERSION_4.9.84
+    default 4.9.227 if KERNEL_VERSION_4.9.227
+
+
+config KERNEL_CONFIG
+    string "Kernel Config"
+    default ""
+
+config KERNEL_BOOT_ENV
+    string "Kernel Boot Env"
+    default ""
+
+config EXBOOTARGS
+    string "ExBootArgs"
+    default ""
+
+endmenu

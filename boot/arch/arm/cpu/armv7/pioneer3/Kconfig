@@ -1,0 +1,75 @@
+if PIONEER3
+
+config SYS_CONFIG_NAME
+    default "pioneer3"
+    ---help---
+    To load the "include/configs/pioneer3.h"
+
+
+config SYS_SOC
+    default "pioneer3"
+    ---help---
+    To generate correct  "arch/arm/include/asm/arch"
+
+config SYS_GENERIC_BOARD
+    bool
+    default y
+
+config VERSION_FPGA
+    bool "FPGA version"
+    default n
+
+config SS_BOOTING_PERF
+    bool "booting time"
+    default y
+
+config SSTAR_SPL_EARLY_BSS
+    bool "clear bss section first before run board_f"
+    default n
+
+config SS_BOARD_RAMSIZE_MB_16
+	bool "Board with 16 MB DDR"
+config SS_BOARD_RAMSIZE_MB_64
+	bool "Board with 64 MB DDR"
+
+choice
+	prompt "RAM chip size"
+	default SS_RAMSIZE_MB_16 if SS_BOARD_RAMSIZE_MB_16
+	default SS_RAMSIZE_MB_64 if SS_BOARD_RAMSIZE_MB_64
+	help
+	  Select the size of the RAM.
+
+config SS_RAMSIZE_MB_16
+	bool "16 MB"
+	help
+	  Choose this option if you have a 16 MB RAM chip.
+
+config SS_RAMSIZE_MB_64
+	bool "64 MB"
+	help
+	  Choose this option if you have a 64 MB RAM chip.
+
+endchoice
+
+config SS_RAM_SIZE
+	hex
+	default 0x01000000 if SS_RAMSIZE_MB_16
+	default 0x04000000 if SS_RAMSIZE_MB_64
+
+config SS_LOAD_ADDR
+	hex
+	default 0x20D00000 if SS_RAMSIZE_MB_16
+	default 0x23D00000 if SS_RAMSIZE_MB_64
+
+config SS_RUN_ADDR
+	hex
+	default 0x20E00000 if SS_RAMSIZE_MB_16
+	default 0x23E00000 if SS_RAMSIZE_MB_64
+
+config SYS_TEXT_BASE
+	hex
+	default 0x20E00000 if SS_RAMSIZE_MB_16
+	default 0x23E00000 if SS_RAMSIZE_MB_64
+
+endif
+

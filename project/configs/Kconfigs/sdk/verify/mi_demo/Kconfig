@@ -1,0 +1,10 @@
+config VERIFY_MI_DEMO
+    bool "mi_demo"
+    default n
+    help
+        whether to compile or not
+
+config verify_mi_demo
+    string
+    default enable if VERIFY_MI_DEMO
+    default disable if !VERIFY_MI_DEMO

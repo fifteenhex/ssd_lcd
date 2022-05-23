@@ -1,0 +1,10 @@
+menu "Sdk Config"
+source configs/Kconfigs/sdk/verify/Kconfig
+
+source configs/Kconfigs/sdk/interface/Kconfig
+
+source configs/Kconfigs/sdk/misc/Kconfig
+
+source configs/Kconfigs/sdk/mhal/Kconfig
+
+endmenu

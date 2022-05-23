@@ -1,0 +1,66 @@
+menu "Misc Options"
+
+config BOOL_FPGA
+    bool "Fpga"
+    default n
+
+config FPGA
+    int
+    range 0 1
+    default 1 if BOOL_FPGA
+    default 0
+
+config BOOL_BENCH
+    bool "Bench"
+    default n
+
+config BENCH
+    string
+    default yes if BOOL_BENCH
+    default no
+
+config MHAL
+    string "Mhal"
+    default ""
+
+config MERGE_BOOT
+    string "Merge Boot"
+    default ""
+
+config BOOTLOGO_FILE
+    string "Bootlogo File"
+    default ""
+
+config LOGO_ADDR
+    string "Logo Addr"
+    default ""
+
+config BOOTLOGO_BUFSIZE
+    string "Bootlogo Bufsize"
+    default ""
+
+config UPGRADE_FILE
+    string "Upgrade File"
+    default ""
+
+config DISP_OUT_NAME
+    string "Disp Out Name"
+    default ""
+
+config FBDEV
+    string "Fbdev"
+    default ""
+
+config WIFI_MODULE
+    string "Wifi Module"
+    default ""
+
+config SPEECH_VENDOR
+    string "Speech Vendor"
+    default ""
+
+config ALINK
+    string "Alink"
+    default ""
+
+endmenu

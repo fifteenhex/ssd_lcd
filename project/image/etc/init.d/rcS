@@ -1,0 +1,13 @@
+#!/bin/sh
+
+mount -a
+mkdir -p /dev/shm
+mkdir -p /dev/pts
+mount devpts
+
+echo /sbin/mdev > /proc/sys/kernel/hotplug
+
+/sbin/mdev -s
+
+/sbin/sysctl -p
+

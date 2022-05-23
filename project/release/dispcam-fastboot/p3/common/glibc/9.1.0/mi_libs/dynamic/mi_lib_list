@@ -1,0 +1,13 @@
+libmi_common.so
+libmi_sys.so
+libmi_gfx.so
+libmi_disp.so
+libmi_panel.so
+libmi_wlan.so
+libmi_vpe.so
+libmi_isp.so
+libmi_sensor.so
+libmi_iqserver.so
+libcus3a.so
+libispalgo.so
+libmi_fb.so

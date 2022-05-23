@@ -1,0 +1,73 @@
+menu "Toolchain"
+
+choice
+    prompt "Toolchain"
+    default TOOLCHAIN_GLIBC
+
+    config TOOLCHAIN_GLIBC
+        bool "glibc"
+
+    config TOOLCHAIN_UCLIBC
+        bool "uclibc"
+endchoice
+
+config TOOLCHAIN
+    string
+    default glibc if TOOLCHAIN_GLIBC
+    default uclibc if TOOLCHAIN_UCLIBC
+
+
+choice
+    prompt "Toolchain Version"
+    default TOOLCHAIN_VERSION_9.1.0
+
+    config TOOLCHAIN_VERSION_4.8.3
+        bool "4.8.3"
+
+    config TOOLCHAIN_VERSION_4.9.4
+        bool "4.9.4"
+
+    config TOOLCHAIN_VERSION_8.2.1
+        bool "8.2.1"
+
+    config TOOLCHAIN_VERSION_9.1.0
+        bool "9.1.0"
+endchoice
+
+config TOOLCHAIN_VERSION
+    string
+    default 4.8.3 if TOOLCHAIN_VERSION_4.8.3
+    default 4.9.4 if TOOLCHAIN_VERSION_4.9.4
+    default 8.2.1 if TOOLCHAIN_VERSION_8.2.1
+    default 9.1.0 if TOOLCHAIN_VERSION_9.1.0
+
+
+choice
+    prompt "Toolchain Rel"
+    default TOOLCHAIN_REL_ARM-LINUX-GNUEABIHF
+
+    config TOOLCHAIN_REL_ARM-LINUX-GNUEABIHF
+        bool "arm-linux-gnueabihf"
+
+    config TOOLCHAIN_REL_ARM-BUILDROOT-LINUX-UCLIBCGNUEABIHF
+        bool "arm-buildroot-linux-uclibcgnueabihf"
+
+    config TOOLCHAIN_REL_ARM-LINUX-GNUEABIHF-9.1.0
+        bool "arm-linux-gnueabihf-9.1.0"
+
+    config TOOLCHAIN_REL_ARM-SIGMASTAR-LINUX-UCLIBCGNUEABIHF-9.1.0
+        bool "arm-sigmastar-linux-uclibcgnueabihf-9.1.0"
+
+    config TOOLCHAIN_REL_ARM-LINUX-GNUEABIHF-SIGMASTAR-9.1.0
+        bool "arm-linux-gnueabihf-sigmastar-9.1.0"
+endchoice
+
+config TOOLCHAIN_REL
+    string
+    default arm-linux-gnueabihf if TOOLCHAIN_REL_ARM-LINUX-GNUEABIHF
+    default arm-buildroot-linux-uclibcgnueabihf if TOOLCHAIN_REL_ARM-BUILDROOT-LINUX-UCLIBCGNUEABIHF
+    default arm-linux-gnueabihf-9.1.0 if TOOLCHAIN_REL_ARM-LINUX-GNUEABIHF-9.1.0
+    default arm-sigmastar-linux-uclibcgnueabihf-9.1.0 if TOOLCHAIN_REL_ARM-SIGMASTAR-LINUX-UCLIBCGNUEABIHF-9.1.0
+    default arm-linux-gnueabihf-sigmastar-9.1.0 if TOOLCHAIN_REL_ARM-LINUX-GNUEABIHF-SIGMASTAR-9.1.0
+
+endmenu

@@ -1,0 +1,192 @@
+menu "Application Compile Config"
+comment "Application Compile Config"
+
+config VERIFY_UI_DEMO
+    bool
+
+config verify_ui_demo
+    string
+    default enable if VERIFY_UI_DEMO
+
+config VERIFY_ZK_BOOTUP
+    bool "zk_bootup"
+    default n
+    select VERIFY_UI_DEMO
+    help
+        whether to compile or not
+
+config verify_zk_bootup
+    string
+    default enable if VERIFY_ZK_BOOTUP
+    default disable
+
+config VERIFY_ZK_MINI
+    bool "zk_mini"
+    default n
+    select VERIFY_UI_DEMO
+    help
+        whether to compile or not
+
+config verify_zk_mini
+    string
+    default enable if VERIFY_ZK_MINI
+    default disable
+
+config VERIFY_ZK_FULL
+    bool "zk_full"
+    default n
+    select VERIFY_UI_DEMO
+    help
+        whether to compile or not
+
+config verify_zk_full
+    string
+    default enable if VERIFY_ZK_FULL
+    default disable
+
+config VERIFY_ZK_MINI_NOSENSOR
+    bool "zk_mini_nosensor"
+    default n
+    select VERIFY_UI_DEMO
+    help
+        whether to compile or not
+
+config verify_zk_mini_nosensor
+    string
+    default enable if VERIFY_ZK_MINI_NOSENSOR
+    default disable
+
+config VERIFY_ZK_MINI_FASTBOOT
+    bool "zk_mini_fastboot"
+    default n
+    select VERIFY_UI_DEMO
+    help
+        whether to compile or not
+
+config verify_zk_mini_fastboot
+    string
+    default enable if VERIFY_ZK_MINI_FASTBOOT
+    default disable
+
+config VERIFY_ZK_FULL_FASTBOOT
+    bool "zk_full_fastboot"
+    default n
+    select VERIFY_UI_DEMO
+    help
+        whether to compile or not
+
+config verify_zk_full_fastboot
+    string
+    default enable if VERIFY_ZK_FULL_FASTBOOT
+    default disable
+
+config VERIFY_ZK_MINI_NOSENSOR_FASTBOOT
+    bool "zk_mini_nosensor_fastboot"
+    default n
+    select VERIFY_UI_DEMO
+    help
+        whether to compile or not
+
+config verify_zk_mini_nosensor_fastboot
+    string
+    default enable if VERIFY_ZK_MINI_NOSENSOR_FASTBOOT
+    default disable
+
+config VERIFY_QFN68_SENSOR_PANEL
+    bool "qfn68 Sensor to Panel"
+    default n
+    select VERIFY_UI_DEMO
+    help
+        whether to compile or not
+
+config verify_qfn68_sensor_panel
+    string
+    default enable if VERIFY_QFN68_SENSOR_PANEL
+    default disable
+
+config VERIFY_BARCODE
+    bool "bar code scanning gun"
+    default n
+    select VERIFY_UI_DEMO
+    help
+        whether to compile or not
+
+config verify_barcode
+    string
+    default enable if VERIFY_BARCODE
+    default disable
+
+config VERIFY_DISP_PIC_FASTBOOT
+    bool "disp_pic_fastboot"
+    default n
+    select VERIFY_UI_DEMO
+    help
+        whether to compile or not
+
+config verify_disp_pic_fastboot
+    string
+    default enable if VERIFY_DISP_PIC_FASTBOOT
+    default disable
+
+config VERIFY_USBCAMERA_FASTBOOT
+    bool "usbcamera_fastboot"
+    default n
+    select VERIFY_UI_DEMO
+    help
+        whether to compile or not
+
+config verify_usbcamera_fastboot
+    string
+    default enable if VERIFY_USBCAMERA_FASTBOOT
+    default disable
+
+config VERIFY_USBCAMERA
+    bool "usbcamera"
+    default n
+    select VERIFY_UI_DEMO
+    help
+        whether to compile or not
+
+config verify_usbcamera
+    string
+    default enable if VERIFY_USBCAMERA
+    default disable
+
+config VERIFY_USBCAM_FASTBOOT
+    bool "usbcam_fastboot"
+    default n
+    select VERIFY_UI_DEMO
+    help
+        whether to compile or not
+
+config verify_usbcam_fastboot
+    string
+    default enable if VERIFY_USBCAM_FASTBOOT
+    default disable
+
+
+config VERIFY_BARCODEYUYAN
+    bool "bar code Yuyan scanning gun"
+    default n
+    select VERIFY_UI_DEMO
+    help
+        whether to compile or not
+
+config verify_barcodeYuyan
+    string
+    default enable if VERIFY_BARCODEYUYAN
+    default disable
+	
+config VERIFY_JPEG2DISP
+    bool "jpeg2disp"
+    default n
+    select VERIFY_UI_DEMO
+    help
+        whether to compile or not
+
+config verify_jpeg2disp
+    string
+    default enable if VERIFY_JPEG2DISP
+    default disable
+	
+endmenu

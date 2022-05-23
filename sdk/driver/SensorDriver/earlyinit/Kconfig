@@ -1,0 +1,5 @@
+config MS_SENSOR_EARLYINIT
+    tristate "Sensor EarlyInit driver support"
+    depends on MS_SENSORDRIVER
+    depends on ARCH_INFINITY6
+

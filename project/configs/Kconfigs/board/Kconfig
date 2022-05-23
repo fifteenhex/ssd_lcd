@@ -1,0 +1,10 @@
+menu "Board"
+config BOARD
+    string "Board"
+    default ""
+
+config BOARD_NAME
+    string "Board Name"
+    default ""
+
+endmenu

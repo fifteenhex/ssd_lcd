@@ -1,0 +1,77 @@
+MODULES_1st:=    \
+	mhal.ko      \
+	mi_common.ko \
+	mi_sys.ko    \
+	mi_sensor.ko \
+	mi_vif.ko    \
+	mi_rgn.ko    \
+	mi_ldc.ko    \
+	mi_vpe.ko    \
+	mi_venc.ko   \
+	mi_ipu.ko   \
+	mi_vdisp.ko   \
+	mi_ai.ko   \
+	mi_ao.ko   \
+	mi_shadow.ko   \
+	mi_divp.ko    \
+	squashfs.ko  \
+
+MODULES_2nd:=   \
+	usb-common.ko   \
+	usbcore.ko  \
+	scsi_mod.ko \
+	cifs.ko     \
+	grace.ko    \
+	sunrpc.ko   \
+	lockd.ko    \
+	nfs.ko      \
+	nfsv2.ko    \
+	mmc_core.ko    \
+	mmc_block.ko   \
+	kdrv_sdmmc.ko  \
+	fat.ko       \
+	msdos.ko     \
+	vfat.ko      \
+	ntfs.ko      \
+	sd_mod.ko    \
+	jffs2.ko     \
+	ubi.ko       \
+	ubifs.ko     \
+	mii.ko       \
+	kdrv_emac.ko \
+
+LIBS_1st:= \
+	libmi_common.so \
+	libmi_sys.so    \
+	libmi_vif.so    \
+	libmi_rgn.so    \
+	libmi_ldc.so    \
+	libmi_vpe.so    \
+	libmi_ipu.so   \
+	libmi_vdisp.so   \
+	libmi_venc.so   \
+	libmi_sensor.so \
+	libmi_isp.so    \
+	libispalgo.so   \
+	libcus3a.so     \
+	libcam_os_wrapper.so    \
+	libcam_fs_wrapper.so    \
+
+LIBS_2nd:= \
+	libfbc_decode.so \
+	libmi_iqserver.so \
+	libmi_vdf.so \
+	libmi_divp.so    \
+	libmi_shadow.so    \
+	libmi_ive.so \
+	libmi_ai.so \
+	libmi_ao.so \
+	libOD_LINUX.so \
+	libMD_LINUX.so \
+	libVG_LINUX.so \
+	libAPC_LINUX.so \
+	libAEC_LINUX.so \
+	libSRC_LINUX.so \
+	libg711.so \
+	libg726.so \
+	libmi_sed.so \

@@ -1,0 +1,19 @@
+choice
+    prompt "sigma_wifi"
+    default NO_WIFI
+
+    config NO_WIFI
+        bool "no_wifi"
+
+    config SSW101B_WIFI_USB
+        bool "ssw101b_wifi_usb"
+
+    config SSW102B_WIFI_SDIO
+        bool "ssw102b_wifi_sdio"
+endchoice
+
+config SIGMA_WIFI
+    string
+    default no_wifi if NO_WIFI
+    default ssw101b_wifi_usb if SSW101B_WIFI_USB
+    default ssw102b_wifi_sdio if SSW102B_WIFI_SDIO

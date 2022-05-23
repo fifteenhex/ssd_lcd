@@ -1,0 +1,10 @@
+config VERIFY_MIXER
+    bool "mixer"
+    default n
+    help
+        whether to compile or not
+
+config verify_mixer
+    string
+    default enable if VERIFY_MIXER
+    default disable if !VERIFY_MIXER

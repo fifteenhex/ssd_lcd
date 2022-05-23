@@ -1,0 +1,1 @@
+setenv ipl_version "ALK=1 SPINAND=1 PROF=1 CPUFREQ=1000 TTFF=1 BOOT=1 CHIP=pioneer3"

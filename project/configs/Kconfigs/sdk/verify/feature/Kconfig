@@ -1,0 +1,277 @@
+menu "Feature Compile Config"
+comment "Feature Compile Config"
+
+config VERIFY_AI
+    bool "ai"
+    default n
+    help
+        whether to compile or not
+
+config verify_ai
+    string
+    default enable if VERIFY_AI
+    default disable if !VERIFY_AI
+
+
+config VERIFY_AO
+    bool "ao"
+    default n
+    help
+        whether to compile or not
+
+config verify_ao
+    string
+    default enable if VERIFY_AO
+    default disable if !VERIFY_AO
+
+
+config VERIFY_CIPHER
+    bool "cipher"
+    default n
+    help
+        whether to compile or not
+
+config verify_cipher
+    string
+    default enable if VERIFY_CIPHER
+    default disable if !VERIFY_CIPHER
+
+
+config VERIFY_DISP
+    bool "disp"
+    default n
+    help
+        whether to compile or not
+
+config verify_disp
+    string
+    default enable if VERIFY_DISP
+    default disable if !VERIFY_DISP
+
+
+config VERIFY_DIVP
+    bool "divp"
+    default n
+    help
+        whether to compile or not
+
+config verify_divp
+    string
+    default enable if VERIFY_DIVP
+    default disable if !VERIFY_DIVP
+
+
+config VERIFY_DLA
+    bool "dla"
+    default n
+    help
+        whether to compile or not
+
+config verify_dla
+    string
+    default enable if VERIFY_DLA
+    default disable if !VERIFY_DLA
+
+
+config VERIFY_FB
+    bool "fb"
+    default n
+    help
+        whether to compile or not
+
+config verify_fb
+    string
+    default enable if VERIFY_FB
+    default disable if !VERIFY_FB
+
+
+config VERIFY_GFX
+    bool "gfx"
+    default n
+    help
+        whether to compile or not
+
+config verify_gfx
+    string
+    default enable if VERIFY_GFX
+    default disable if !VERIFY_GFX
+
+
+config VERIFY_HDMI
+    bool "hdmi"
+    default n
+    help
+        whether to compile or not
+
+config verify_hdmi
+    string
+    default enable if VERIFY_HDMI
+    default disable if !VERIFY_HDMI
+
+
+config VERIFY_IPU
+    bool "ipu"
+    default n
+    help
+        whether to compile or not
+
+config verify_ipu
+    string
+    default enable if VERIFY_IPU
+    default disable if !VERIFY_IPU
+
+
+config VERIFY_JPD
+    bool "jpd"
+    default n
+    help
+        whether to compile or not
+
+config verify_jpd
+    string
+    default enable if VERIFY_JPD
+    default disable if !VERIFY_JPD
+
+
+config VERIFY_SHADOW
+    bool "shadow"
+    default n
+    help
+        whether to compile or not
+
+config verify_shadow
+    string
+    default enable if VERIFY_SHADOW
+    default disable if !VERIFY_SHADOW
+
+
+config VERIFY_SYS
+    bool "sys"
+    default n
+    help
+        whether to compile or not
+
+config verify_sys
+    string
+    default enable if VERIFY_SYS
+    default disable if !VERIFY_SYS
+
+config VERIFY_UVC_UAC
+    bool "uvc_uac"
+    default n
+    help
+        whether to compile or not
+
+config verify_uvc_uac
+    string
+    default enable if VERIFY_UVC_UAC
+    default disable if !VERIFY_UVC_UAC
+
+config VERIFY_UAC
+    bool "uac"
+    default n
+    help
+        whether to compile or not
+
+config verify_uac
+    string
+    default enable if VERIFY_UAC
+    default disable if !VERIFY_UAC
+
+
+config VERIFY_VDEC
+    bool "vdec"
+    default n
+    help
+        whether to compile or not
+
+config verify_vdec
+    string
+    default enable if VERIFY_VDEC
+    default disable if !VERIFY_VDEC
+
+
+config VERIFY_VDISP
+    bool "vdisp"
+    default n
+    help
+        whether to compile or not
+
+config verify_vdisp
+    string
+    default enable if VERIFY_VDISP
+    default disable if !VERIFY_VDISP
+
+
+config VERIFY_VENC
+    bool "venc"
+    default n
+    help
+        whether to compile or not
+
+config verify_venc
+    string
+    default enable if VERIFY_VENC
+    default disable if !VERIFY_VENC
+
+
+config VERIFY_VIF
+    bool "vif"
+    default n
+    help
+        whether to compile or not
+
+config verify_vif
+    string
+    default enable if VERIFY_VIF
+    default disable if !VERIFY_VIF
+
+
+config VERIFY_VPE
+    bool "vpe"
+    default n
+    help
+        whether to compile or not
+
+config verify_vpe
+    string
+    default enable if VERIFY_VPE
+    default disable if !VERIFY_VPE
+
+
+config VERIFY_WARP
+    bool "warp"
+    default n
+    help
+        whether to compile or not
+
+config verify_warp
+    string
+    default enable if VERIFY_WARP
+    default disable if !VERIFY_WARP
+
+
+config VERIFY_WLAN
+    bool "wlan"
+    default n
+    help
+        whether to compile or not
+
+config verify_wlan
+    string
+    default enable if VERIFY_WLAN
+    default disable if !VERIFY_WLAN
+
+
+config VERIFY_MDB
+    bool "mdb"
+    default n
+    help
+        whether to compile or not
+
+config verify_mdb
+    string
+    default enable if VERIFY_MDB
+    default disable if !VERIFY_MDB
+
+endmenu

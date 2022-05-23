@@ -1,0 +1,10 @@
+libmi_common.so
+libmi_sys.so
+libmi_gfx.so
+libmi_disp.so
+libmi_panel.so
+libmi_wlan.so
+libmi_divp.so
+libmi_rgn.so
+libcjson.so
+libmi_fb.so

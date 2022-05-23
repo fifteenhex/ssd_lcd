@@ -1,0 +1,1 @@
+/home/causer/swnas/workspace/ALL--ALKAID--ReleaseBuild/alkaid/sdk/driver/SensorDriver/sensor.mk

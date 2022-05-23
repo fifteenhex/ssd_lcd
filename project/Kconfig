@@ -1,0 +1,32 @@
+#
+# For a description of the syntax of this configuration file,
+# see kernel/Documentation/kbuild/kconfig-language.txt.
+mainmenu "Alkaid Configuration"
+
+source configs/Kconfigs/chip/Kconfig
+
+source configs/Kconfigs/product/Kconfig
+
+source configs/Kconfigs/sigma_wifi/Kconfig
+
+source configs/Kconfigs/board/Kconfig
+
+source configs/Kconfigs/toolchain/Kconfig
+
+source configs/Kconfigs/busybox/Kconfig
+
+source configs/Kconfigs/kernel/Kconfig
+
+source configs/Kconfigs/image/Kconfig
+
+source configs/Kconfigs/mmap/Kconfig
+
+source configs/Kconfigs/sensor/Kconfig
+
+source configs/Kconfigs/customer_options/Kconfig
+
+source configs/Kconfigs/misc_options/Kconfig
+
+source configs/Kconfigs/rtos/Kconfig
+
+source configs/Kconfigs/sdk/Kconfig

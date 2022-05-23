@@ -1,0 +1,357 @@
+#
+# Automatically generated file; DO NOT EDIT.
+# Alkaid Configuration
+#
+# CONFIG_I2M is not set
+# CONFIG_I6 is not set
+CONFIG_I6E=y
+# CONFIG_I6B0 is not set
+# CONFIG_M6 is not set
+CONFIG_CHIP="i6e"
+# CONFIG_IPC is not set
+# CONFIG_NVR is not set
+# CONFIG_XVR is not set
+# CONFIG_CARDV is not set
+# CONFIG_USBCAM is not set
+# CONFIG_IPC-RTOS is not set
+# CONFIG_IPC-RTOS-SMPLH is not set
+CONFIG_USBCAM-RTOS=y
+CONFIG_PRODUCT="usbcam-rtos-smplh"
+
+#
+# Board
+#
+CONFIG_BOARD="013A"
+CONFIG_BOARD_NAME="SSC013A-S01A"
+
+#
+# Toolchain
+#
+CONFIG_TOOLCHAIN_GLIBC=y
+CONFIG_TOOLCHAIN="glibc"
+CONFIG_TOOLCHAIN_VERSION_9.1.0=y
+CONFIG_TOOLCHAIN_VERSION="9.1.0"
+CONFIG_TOOLCHAIN_REL_ARM-LINUX-GNUEABIHF-9.1.0=y
+CONFIG_TOOLCHAIN_REL="arm-linux-gnueabihf-9.1.0"
+
+#
+# Busybox
+#
+CONFIG_BUSYBOX="busybox-1.20.2-arm-linux-gnueabihf-glibc-9.1.0-dynamic"
+
+#
+# Kernel
+#
+CONFIG_KERNEL_VERSION_4.9.84=y
+CONFIG_KERNEL_VERSION="4.9.84"
+CONFIG_KERNEL_CONFIG="infinity6e_ssc013a_s01a_spinand_smplh_defconfig"
+CONFIG_KERNEL_BOOT_ENV="LX_MEM=$(KERNEL_MEMLEN)"
+CONFIG_EXBOOTARGS=""
+
+#
+# Image
+#
+CONFIG_IMAGE_CONFIG="spinand-ramdisk.rtos.smplh.partition.config"
+CONFIG_FLASH_SIZE=""
+
+#
+# Mmap
+#
+CONFIG_MMAP="MMAP_I6E_128_dualOS.h"
+
+#
+# Sensor
+#
+CONFIG_IQ0=""
+CONFIG_IQ1=""
+CONFIG_IQ2=""
+CONFIG_IQ3=""
+CONFIG_SENSOR_LIST=""
+CONFIG_SENSOR0=""
+CONFIG_SENSOR0_OPT=""
+CONFIG_SENSOR1=""
+CONFIG_SENSOR1_OPT=""
+CONFIG_SENSOR2=""
+CONFIG_SENSOR2_OPT=""
+
+#
+# Customer Options
+#
+CONFIG_mi_dbg=y
+CONFIG_MI_DBG=1
+# CONFIG_support_smart_display_vdec is not set
+CONFIG_SUPPORT_SMART_DISPLAY_VDEC=0
+CONFIG_support_msos_mpool_add_pa2varange=y
+CONFIG_SUPPORT_MsOS_MPool_Add_PA2VARange=1
+CONFIG_support_disp_align_up_offset32=y
+CONFIG_SUPPORT_DISP_ALIGN_UP_OFFSET32=1
+# CONFIG_support_hdmi_vga_direct_mode is not set
+CONFIG_SUPPORT_HDMI_VGA_DIRECT_MODE=0
+# CONFIG_support_divp_use_ge_scaling_up is not set
+CONFIG_SUPPORT_DIVP_USE_GE_SCALING_UP=0
+# CONFIG_support_vif_use_ge_fill_buf is not set
+CONFIG_SUPPORT_VIF_USE_GE_FILL_BUF=0
+CONFIG_support_stub_device_for_test_sys=y
+CONFIG_SUPPORT_STUB_DEVICE_FOR_TEST_SYS=1
+# CONFIG_support_vdec_multi_res is not set
+CONFIG_SUPPORT_VDEC_MULTI_RES=0
+# CONFIG_support_divp_p2_mode is not set
+CONFIG_SUPPORT_DIVP_P2_MODE=0
+
+#
+# Mi Sys Pool Config
+#
+# CONFIG_config_mi_enable_vb_pool is not set
+CONFIG_CONFIG_MI_ENABLE_VB_POOL=0
+# CONFIG_config_mi_enable_meta_pool is not set
+CONFIG_CONFIG_MI_ENABLE_META_POOL=0
+# CONFIG_config_mi_enable_sys_cfg is not set
+CONFIG_CONFIG_MI_ENABLE_SYS_CFG=0
+# CONFIG_config_mi_enable_shrinkable_pool is not set
+CONFIG_CONFIG_MI_ENABLE_SHRINKABLE_POOL=0
+CONFIG_config_mi_enable_ringheap_pool=y
+CONFIG_CONFIG_MI_ENABLE_RINGHEAP_POOL=1
+
+#
+# Misc Options
+#
+CONFIG_FPGA=0
+CONFIG_BENCH="no"
+CONFIG_MHAL=""
+CONFIG_MERGE_BOOT=""
+CONFIG_BOOTLOGO_FILE=""
+CONFIG_LOGO_ADDR=""
+CONFIG_BOOTLOGO_BUFSIZE=""
+CONFIG_UPGRADE_FILE=""
+CONFIG_DISP_OUT_NAME=""
+CONFIG_FBDEV=""
+CONFIG_WIFI_MODULE=""
+CONFIG_SPEECH_VENDOR=""
+CONFIG_ALINK=""
+
+#
+# Rtos
+#
+CONFIG_BOOL_DUAL_OS=y
+CONFIG_DUAL_OS="on"
+CONFIG_FAST_DEMO="off"
+CONFIG_SENSOR_TYPE="ps5250"
+CONFIG_LINUX_MEM_SIZE=""
+CONFIG_RTOS_BIN="infinity6e_128_smplh_isw.bin"
+CONFIG_RTOS_LOAD_ADDR="0x27C08000"
+CONFIG_MMA_BASE="0x24500000"
+CONFIG_MMA_SIZE="0x03300000"
+
+#
+# Sdk Config
+#
+
+#
+# Verify Compile Config
+#
+
+#
+# Feature Compile Config
+#
+
+#
+# Feature Compile Config
+#
+# CONFIG_VERIFY_AI is not set
+CONFIG_verify_ai="disable"
+# CONFIG_VERIFY_AO is not set
+CONFIG_verify_ao="disable"
+# CONFIG_VERIFY_CIPHER is not set
+CONFIG_verify_cipher="disable"
+# CONFIG_VERIFY_DISP is not set
+CONFIG_verify_disp="disable"
+# CONFIG_VERIFY_DIVP is not set
+CONFIG_verify_divp="disable"
+# CONFIG_VERIFY_DLA is not set
+CONFIG_verify_dla="disable"
+# CONFIG_VERIFY_FB is not set
+CONFIG_verify_fb="disable"
+# CONFIG_VERIFY_GFX is not set
+CONFIG_verify_gfx="disable"
+# CONFIG_VERIFY_HDMI is not set
+CONFIG_verify_hdmi="disable"
+# CONFIG_VERIFY_IPU is not set
+CONFIG_verify_ipu="disable"
+# CONFIG_VERIFY_JPD is not set
+CONFIG_verify_jpd="disable"
+# CONFIG_VERIFY_SHADOW is not set
+CONFIG_verify_shadow="disable"
+# CONFIG_VERIFY_SYS is not set
+CONFIG_verify_sys="disable"
+# CONFIG_VERIFY_UAC is not set
+CONFIG_verify_uac="disable"
+# CONFIG_VERIFY_VDEC is not set
+CONFIG_verify_vdec="disable"
+# CONFIG_VERIFY_VDISP is not set
+CONFIG_verify_vdisp="disable"
+# CONFIG_VERIFY_VENC is not set
+CONFIG_verify_venc="disable"
+# CONFIG_VERIFY_VIF is not set
+CONFIG_verify_vif="disable"
+# CONFIG_VERIFY_VPE is not set
+CONFIG_verify_vpe="disable"
+# CONFIG_VERIFY_WARP is not set
+CONFIG_verify_warp="disable"
+# CONFIG_VERIFY_WLAN is not set
+CONFIG_verify_wlan="disable"
+CONFIG_VERIFY_MDB=y
+CONFIG_verify_mdb="enable"
+CONFIG_VERIFY_MI_DEMO=y
+CONFIG_verify_mi_demo="enable"
+CONFIG_VERIFY_MIXER=y
+CONFIG_verify_mixer="enable"
+CONFIG_VERIFY_PY_IPU=y
+CONFIG_verify_py_ipu="enable"
+
+#
+# Interface Compile Config
+#
+
+#
+# Interface Compile Config
+#
+CONFIG_INTERFACE_AI=y
+CONFIG_interface_ai="enable"
+CONFIG_INTERFACE_ALSA=y
+CONFIG_interface_alsa="enable"
+CONFIG_INTERFACE_AO=y
+CONFIG_interface_ao="enable"
+# CONFIG_INTERFACE_BAR is not set
+CONFIG_interface_bar="disable"
+# CONFIG_INTERFACE_CIPHER is not set
+CONFIG_interface_cipher="disable"
+CONFIG_INTERFACE_COMMON=y
+CONFIG_interface_common="enable"
+CONFIG_INTERFACE_CUS3A=y
+CONFIG_interface_cus3a="enable"
+CONFIG_INTERFACE_DISP=y
+CONFIG_interface_disp="enable"
+CONFIG_INTERFACE_DIVP=y
+CONFIG_interface_divp="enable"
+# CONFIG_INTERFACE_FOO is not set
+CONFIG_interface_foo="disable"
+# CONFIG_INTERFACE_GFX is not set
+CONFIG_interface_gfx="disable"
+CONFIG_INTERFACE_GYRO=y
+CONFIG_interface_gyro="enable"
+# CONFIG_INTERFACE_HDMI is not set
+CONFIG_interface_hdmi="disable"
+CONFIG_INTERFACE_IPU=y
+CONFIG_interface_ipu="enable"
+CONFIG_INTERFACE_IQSERVER=y
+CONFIG_interface_iqserver="enable"
+CONFIG_INTERFACE_ISP=y
+CONFIG_interface_isp="enable"
+CONFIG_INTERFACE_ISPALGO=y
+CONFIG_interface_ispalgo="enable"
+# CONFIG_INTERFACE_JPD is not set
+CONFIG_interface_jpd="disable"
+CONFIG_INTERFACE_LDC=y
+CONFIG_interface_ldc="enable"
+CONFIG_INTERFACE_MIPITX=y
+CONFIG_interface_mipitx="enable"
+CONFIG_INTERFACE_PANEL=y
+CONFIG_interface_panel="enable"
+CONFIG_INTERFACE_RGN=y
+CONFIG_interface_rgn="enable"
+CONFIG_INTERFACE_SED=y
+CONFIG_interface_sed="enable"
+CONFIG_INTERFACE_SENSOR=y
+CONFIG_interface_sensor="enable"
+CONFIG_INTERFACE_SHADOW=y
+CONFIG_interface_shadow="enable"
+CONFIG_INTERFACE_SYS=y
+CONFIG_interface_sys="enable"
+# CONFIG_INTERFACE_VDEC is not set
+CONFIG_interface_vdec="disable"
+CONFIG_INTERFACE_VDF=y
+CONFIG_interface_vdf="enable"
+CONFIG_INTERFACE_VDISP=y
+CONFIG_interface_vdisp="enable"
+CONFIG_INTERFACE_VENC=y
+CONFIG_interface_venc="enable"
+CONFIG_INTERFACE_VIF=y
+CONFIG_interface_vif="enable"
+CONFIG_INTERFACE_VPE=y
+CONFIG_interface_vpe="enable"
+# CONFIG_INTERFACE_WARP is not set
+CONFIG_interface_warp="disable"
+# CONFIG_INTERFACE_WLAN is not set
+CONFIG_interface_wlan="disable"
+
+#
+# Misc Compile Config
+#
+
+#
+# Misc Compile Config
+#
+# CONFIG_MISC_FBDEV is not set
+CONFIG_misc_fbdev="disable"
+CONFIG_MISC_CONFIG_TOOL=y
+CONFIG_misc_config_tool="enable"
+
+#
+# Mhal Compile Config
+#
+
+#
+# Mhal Compile Config
+#
+CONFIG_MHAL_AIO=y
+CONFIG_mhal_aio="enable"
+CONFIG_MHAL_CMDQ_SERVICE=y
+CONFIG_mhal_cmdq_service="enable"
+CONFIG_MHAL_CSI=y
+CONFIG_mhal_csi="enable"
+CONFIG_MHAL_DISP=y
+CONFIG_mhal_disp="enable"
+CONFIG_MHAL_DIVP=y
+CONFIG_mhal_divp="enable"
+CONFIG_MHAL_EARLYINIT=y
+CONFIG_mhal_earlyinit="enable"
+# CONFIG_MHAL_GE is not set
+CONFIG_mhal_ge="disable"
+# CONFIG_MHAL_HDMITX is not set
+CONFIG_mhal_hdmitx="disable"
+CONFIG_MHAL_IMI_HEAP=y
+CONFIG_mhal_imi_heap="enable"
+CONFIG_MHAL_INIT=y
+CONFIG_mhal_init="enable"
+CONFIG_MHAL_IPU=y
+CONFIG_mhal_ipu="enable"
+CONFIG_MHAL_ISP=y
+CONFIG_mhal_isp="enable"
+CONFIG_MHAL_ISPALGO=y
+CONFIG_mhal_ispalgo="enable"
+CONFIG_MHAL_ISPMID=y
+CONFIG_mhal_ispmid="enable"
+CONFIG_MHAL_ISPSCL=y
+CONFIG_mhal_ispscl="enable"
+CONFIG_MHAL_JPD=y
+CONFIG_mhal_jpd="enable"
+CONFIG_MHAL_LDC=y
+CONFIG_mhal_ldc="enable"
+CONFIG_MHAL_MIPITX=y
+CONFIG_mhal_mipitx="enable"
+CONFIG_MHAL_MLOAD=y
+CONFIG_mhal_mload="enable"
+CONFIG_MHAL_NEON=y
+CONFIG_mhal_neon="enable"
+CONFIG_MHAL_PANEL=y
+CONFIG_mhal_panel="enable"
+CONFIG_MHAL_RGN=y
+CONFIG_mhal_rgn="enable"
+CONFIG_MHAL_SENSORIF=y
+CONFIG_mhal_sensorif="enable"
+CONFIG_MHAL_VCODEC=y
+CONFIG_mhal_vcodec="enable"
+CONFIG_MHAL_VIF=y
+CONFIG_mhal_vif="enable"
+CONFIG_MHAL_VPE=y
+CONFIG_mhal_vpe="enable"
